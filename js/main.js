@@ -5,7 +5,7 @@ $(function() {
 	  type: "GET",
      dataType: "jsonp",
      cache: false,
-	  url: "https://api.instagram.com//v1/users/1910204/media/recent?count=" + max_img + "&amp;access_token=1910204.1fb234f.55bf74fc1df246a584191dcf5909eae8",
+	  url: "https://api.instagram.com/v1/users/1910204/media/recent?count=" + max_img + "&amp;access_token=1910204.1fb234f.55bf74fc1df246a584191dcf5909eae8",
 	  success: function(obj){
 			$.each(obj.data, function (k,insta) {
 				var caption = insta.caption;
