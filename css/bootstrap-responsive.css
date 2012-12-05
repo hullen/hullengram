@@ -819,6 +819,9 @@
     float: none;
     margin-left: 0;
   }
+  .thumbnails > li img {
+    width: 720px;
+  }
   [class*="span"],
   .uneditable-input[class*="span"],
   .row-fluid [class*="span"] {

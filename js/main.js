@@ -10,9 +10,9 @@ $(function() {
 			$.each(obj.data, function (k,insta) {
 				var caption = insta.caption;
 				if(caption == null) {
-					$insta_list.append('<li class="span2"><a href="' + insta.link + '" class="thumbnail"><img src="' + insta.images['thumbnail'].url + '" alt=""></a></li>');
+					$insta_list.append('<li class="span2"><a href="' + insta.link + '" class="thumbnail"><img src="' + insta.images['thumbnail'].url + '" width="170" alt=""></a></li>');
 				} else {
-					$insta_list.append('<li class="span2"><a href="' + insta.link + '" class="thumbnail"><img src="' + insta.images['thumbnail'].url + '" alt="' + caption.text + '"></a><small>' + caption.text + '</small></li>');
+					$insta_list.append('<li class="span2"><a href="' + insta.link + '" class="thumbnail"><img src="' + insta.images['thumbnail'].url + '" width="170" alt="' + caption.text + '"></a><small>' + caption.text + '</small></li>');
 				}
 			});
 	  }
